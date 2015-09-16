@@ -13,6 +13,7 @@
 		FA74DAAC19FF0F2F003C421B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA74DAAB19FF0F2F003C421B /* Images.xcassets */; };
 		FA74DAAF19FF0F2F003C421B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA74DAAD19FF0F2F003C421B /* LaunchScreen.xib */; };
 		FA74DABB19FF0F2F003C421B /* StormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74DABA19FF0F2F003C421B /* StormyTests.swift */; };
+		FAEF30F01A070C1D00C01682 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF30EF1A070C1D00C01682 /* Current.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		FA74DAB419FF0F2F003C421B /* StormyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA74DAB919FF0F2F003C421B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA74DABA19FF0F2F003C421B /* StormyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormyTests.swift; sourceTree = "<group>"; };
+		FAEF30EF1A070C1D00C01682 /* Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				FA74DAA419FF0F2F003C421B /* AppDelegate.swift */,
 				FA74DAA619FF0F2F003C421B /* ViewController.swift */,
+				FAEF30EF1A070C1D00C01682 /* Current.swift */,
 				FA74DAA819FF0F2F003C421B /* Main.storyboard */,
 				FA74DAAB19FF0F2F003C421B /* Images.xcassets */,
 				FA74DAAD19FF0F2F003C421B /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEF30F01A070C1D00C01682 /* Current.swift in Sources */,
 				FA74DAA719FF0F2F003C421B /* ViewController.swift in Sources */,
 				FA74DAA519FF0F2F003C421B /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				FA74DAC019FF0F2F003C421B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA74DAC119FF0F2F003C421B /* Build configuration list for PBXNativeTarget "StormyTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				FA74DAC319FF0F2F003C421B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
