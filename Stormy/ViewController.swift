@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Mapbox
 
 class ViewController: UIViewController {
+    
+    var map: MGLMapView!
+    
+    @IBOutlet weak var mapView: UIView!
     
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var currentTimeLabel: UILabel!
@@ -26,8 +31,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         refreshActivityIndicator.hidden = true
         getCurrentWeatherData()
+        addMapView()
         
-    }
+        }
     
     func getCurrentWeatherData() -> Void {
         
@@ -92,6 +98,7 @@ class ViewController: UIViewController {
     @IBAction func refresh() {
         
         getCurrentWeatherData()
+        addMapView()
         
         refreshButton.hidden = true
         refreshActivityIndicator.hidden = false
@@ -101,6 +108,19 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func addMapView(){
+        
+        // initialize map view
+        map = MGLMapView(frame: mapView.bounds)
+        map.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+        
+        // set the map's center coordinate
+        map.setCenterCoordinate(CLLocationCoordinate2D(latitude: 37.8269775, longitude: -122.4229555), zoomLevel: 15, animated: true)
+        
+        mapView.addSubview(map)
+
     }
 
 

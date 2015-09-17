@@ -17,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FtZ-nC-O1D">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUMIDITY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuK-dU-pUb">
                                 <rect key="frame" x="56" y="377" width="58" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
@@ -120,6 +124,7 @@
                         <outlet property="currentTimeLabel" destination="YYr-en-k6C" id="ob7-AZ-iBb"/>
                         <outlet property="humidityLabel" destination="AYx-BB-7CV" id="x8C-gK-0eY"/>
                         <outlet property="iconView" destination="abs-WP-Qpu" id="6cQ-aL-WTl"/>
+                        <outlet property="mapView" destination="FtZ-nC-O1D" id="3SD-8P-g2D"/>
                         <outlet property="precipitationLabel" destination="QZe-rZ-0JA" id="gKY-7X-kit"/>
                         <outlet property="refreshActivityIndicator" destination="GfN-lU-1Jg" id="TUQ-KU-XT4"/>
                         <outlet property="refreshButton" destination="O1d-7t-ynM" id="h4P-eR-9eR"/>
@@ -129,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74.666666666666671" y="128.74666666666667"/>
+            <point key="canvasLocation" x="74" y="128"/>
         </scene>
     </scenes>
     <resources>

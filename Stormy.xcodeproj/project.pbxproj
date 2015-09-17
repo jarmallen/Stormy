@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BD620C3B3EE763B8B7AAF6E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2A2B0FFEE8AACF792B0E4F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FA74DAA519FF0F2F003C421B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74DAA419FF0F2F003C421B /* AppDelegate.swift */; };
 		FA74DAA719FF0F2F003C421B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74DAA619FF0F2F003C421B /* ViewController.swift */; };
 		FA74DAAA19FF0F2F003C421B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA74DAA819FF0F2F003C421B /* Main.storyboard */; };
 		FA74DAAC19FF0F2F003C421B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA74DAAB19FF0F2F003C421B /* Images.xcassets */; };
 		FA74DAAF19FF0F2F003C421B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA74DAAD19FF0F2F003C421B /* LaunchScreen.xib */; };
 		FA74DABB19FF0F2F003C421B /* StormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74DABA19FF0F2F003C421B /* StormyTests.swift */; };
+		FA7A67321BA9F4DF000E0E1E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA7A67311BA9F4DF000E0E1E /* Settings.bundle */; };
 		FAEF30F01A070C1D00C01682 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF30EF1A070C1D00C01682 /* Current.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D634F7231D65829E44064EE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0E2A2B0FFEE8AACF792B0E4F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC009223F3FF7AFCC3D8E2B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FA74DA9F19FF0F2F003C421B /* Stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA74DAA319FF0F2F003C421B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA74DAA419FF0F2F003C421B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +42,7 @@
 		FA74DAB419FF0F2F003C421B /* StormyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA74DAB919FF0F2F003C421B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA74DABA19FF0F2F003C421B /* StormyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormyTests.swift; sourceTree = "<group>"; };
+		FA7A67311BA9F4DF000E0E1E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../../../../Downloads/Settings.bundle; sourceTree = "<group>"; };
 		FAEF30EF1A070C1D00C01682 /* Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD620C3B3EE763B8B7AAF6E /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D322B959971BE8B3E8574974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E2A2B0FFEE8AACF792B0E4F /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED2DA3FAFD948C06DA95A9D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC009223F3FF7AFCC3D8E2B3 /* Pods.debug.xcconfig */,
+				0D634F7231D65829E44064EE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FA74DA9619FF0F2F003C421B = {
 			isa = PBXGroup;
 			children = (
 				FA74DAA119FF0F2F003C421B /* Stormy */,
 				FA74DAB719FF0F2F003C421B /* StormyTests */,
 				FA74DAA019FF0F2F003C421B /* Products */,
+				ED2DA3FAFD948C06DA95A9D0 /* Pods */,
+				D322B959971BE8B3E8574974 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +111,7 @@
 				FA74DAA819FF0F2F003C421B /* Main.storyboard */,
 				FA74DAAB19FF0F2F003C421B /* Images.xcassets */,
 				FA74DAAD19FF0F2F003C421B /* LaunchScreen.xib */,
+				FA7A67311BA9F4DF000E0E1E /* Settings.bundle */,
 				FA74DAA219FF0F2F003C421B /* Supporting Files */,
 			);
 			path = Stormy;
@@ -122,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA74DABE19FF0F2F003C421B /* Build configuration list for PBXNativeTarget "Stormy" */;
 			buildPhases = (
+				52440D06958922A5DF159D37 /* Check Pods Manifest.lock */,
 				FA74DA9B19FF0F2F003C421B /* Sources */,
 				FA74DA9C19FF0F2F003C421B /* Frameworks */,
 				FA74DA9D19FF0F2F003C421B /* Resources */,
+				95511E88B8AE8C251F421989 /* Copy Pods Resources */,
+				DA0E2E23E392DF5162DD7D48 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7A67321BA9F4DF000E0E1E /* Settings.bundle in Resources */,
 				FA74DAAA19FF0F2F003C421B /* Main.storyboard in Resources */,
 				FA74DAAF19FF0F2F003C421B /* LaunchScreen.xib in Resources */,
 				FA74DAAC19FF0F2F003C421B /* Images.xcassets in Resources */,
@@ -209,6 +240,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52440D06958922A5DF159D37 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95511E88B8AE8C251F421989 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0E2E23E392DF5162DD7D48 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA74DA9B19FF0F2F003C421B /* Sources */ = {
@@ -338,6 +417,7 @@
 		};
 		FA74DABF19FF0F2F003C421B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC009223F3FF7AFCC3D8E2B3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Stormy/Info.plist;
@@ -348,6 +428,7 @@
 		};
 		FA74DAC019FF0F2F003C421B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D634F7231D65829E44064EE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Stormy/Info.plist;
