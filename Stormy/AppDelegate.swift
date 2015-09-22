@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Optimizely
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,9 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        Optimizely.startOptimizelyWithAPIToken("AAM7hIkBfDU-zhLmbGK78Sr8mE_ugCUQ~3535020291", launchOptions: launchOptions)
+        
         application.setStatusBarHidden(true, withAnimation: .None)
         
         return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        if (Optimizely.handleOpenURL(url)){
+            return true
+        }
+        
+        return false
     }
 
     func applicationWillResignActive(application: UIApplication) {
